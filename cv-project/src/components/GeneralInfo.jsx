@@ -19,21 +19,21 @@ export default function GeneralInfo() {
         setIsEditing(false);
     };
 
-    if(isEnding) {
+    if(isEditing) {
         return (
             <form onSubmit = {handleSubmit} className="section-container">
                 <h2>General Information</h2>
                 <input 
                     type="text" name="name" value={info.name}
-                    onChange={handleChange} placeHolder="Full Name" required
+                    onChange={handleChange} placeholder="Full Name" required
                 />
                 <input
                     type="tel" name="email" value={info.email}
-                    onChange={handleChange} placeHolder="Email" required
+                    onChange={handleChange} placeholder="Email" required
                 />
                 <input
                     type="tel" name="phone" value={info.phone}
-                    onChange={handleChange} placeHolder="Phone Number" required
+                    onChange={handleChange} placeholder="Phone Number" required
                 />
                 <button type="submit">Submit</button>
             </form>

@@ -24,15 +24,15 @@ export default function Education() {
                 <h2>Educational Experience</h2>
                 <input
                     type="text" name="school" value={info.school}
-                    onChange={handleChange} placeHolder="School Name" required
+                    onChange={handleChange} placeholder="School Name" required
                 />
                 <input
                     type="text" name="title" value={info.title}
-                    onChange={handleChange} placeHolder="Title of Study" required 
+                    onChange={handleChange} placeholder="Title of Study" required 
                 />
                 <input
                     type="text" name="date" value={info.date}
-                    onChange={handleChange} placeHolder="Date of Study" required 
+                    onChange={handleChange} placeholder="Date of Study" required 
                 />
                 <button type="submit">Submit</button>
             </form>
